@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Profile Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #181818;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .form-control {
+            margin-bottom: 20px;
+        }
+
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .form-control textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #333;
+            color: #fff;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 5px;
+            }
+
+            .form-control textarea {
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p>Reminder: You can use voice-to-text to fill in these fields. This information will be used to create a profile to assist in your job search, so please be as accurate and detailed as possible.</p>
+        </div>
+    </header>
+    <div class="container">
+    <h1>Job Profile Survey</h1>
+    <form id="jobProfileForm">
+
+        <div class="form-control">
+            <label for="question1">1. What specific industry have you worked in?</label>
+            <textarea id="question1"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question2">2. How many years of experience do you have in this industry?</label>
+            <textarea id="question2"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question3">3. What specific blue-collar roles have you held?</label>
+            <textarea id="question3"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question4">4. Have you ever managed a team? If so, what was the size of your team?</label>
+            <textarea id="question4"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question5">5. What were your key responsibilities as a manager?</label>
+            <textarea id="question5"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question6">6. Are you comfortable working in a team remotely?</label>
+            <textarea id="question6"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question7">7. What remote communication tools have you used (e.g., Zoom, Slack, etc.)?</label>
+            <textarea id="question7"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question8">8. How comfortable are you with learning new software or technologies?</label>
+            <textarea id="question8"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question9">9. Have you ever worked in a customer service role?</label>
+            <textarea id="question9"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question10">10. How do you handle negative feedback or criticism?</label>
+            <textarea id="question10"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question11">11. How do you prioritize your work and tasks?</label>
+            <textarea id="question11"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question12">12. How do you handle stress and pressure?</label>
+            <textarea id="question12"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question13">13. Have you ever missed a deadline? If so, how did you handle it?</label>
+            <textarea id="question13"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question14">14. Have you ever had to deal with a difficult team member? If so, how did you handle it?</label>
+            <textarea id="question14"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question15">15. Are you comfortable with a job that may involve direct sales or customer service?</label>
+            <textarea id="question15"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question16">16. Do you have any experience with online sales or e-commerce platforms?</label>
+            <textarea id="question16"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question17">17. Have you ever worked in a call center or in telemarketing?</label>
+            <textarea id="question17"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question18">18. How comfortable are you with making cold calls or dealing with potential customer rejections?</label>
+            <textarea id="question18"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question19">19. Are you comfortable with a job that requires you to work on weekends or holidays?</label>
+            <textarea id="question19"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question20">20. How well do you handle multitasking?</label>
+            <textarea id="question20"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question21">21. How good are your written communication skills?</label>
+            <textarea id="question21"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question22">22. Are you comfortable with a job that requires a significant amount of typing?</label>
+            <textarea id="question22"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question23">23. Are you comfortable with a job that requires you to be on the phone for the majority of the day?</label>
+            <textarea id="question23"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question24">24. What types of products or services are you most comfortable selling or representing?</label>
+            <textarea id="question24"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question25">25. Are you willing to take training or certification courses as part of your job?</label>
+            <textarea id="question25"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question26">26. Do you have any experience with administrative work like scheduling, email management, etc.?</label>
+            <textarea id="question26"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question27">27. Are you comfortable with using software for project management and task delegation?</label>
+            <textarea id="question27"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question28">28. How would you rate your proficiency with MS Office Suite or similar software?</label>
+            <textarea id="question28"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question29">29. Are you comfortable with jobs that may require data entry tasks?</label>
+            <textarea id="question29"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question30">30. Are you comfortable working in different time zones?</label>
+            <textarea id="question30"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question31">31. Do you have any experience working in finance or dealing with financial data?</label>
+            <textarea id="question31"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question32">32. Have you ever worked in an invoicing or bookkeeping role?</label>
+            <textarea id="question32"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question33">33. Have you ever worked in a role that required you to manage or track inventory?</label>
+            <textarea id="question33"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question34">34. How comfortable are you with math and calculations?</label>
+            <textarea id="question34"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question35">35. Are you comfortable with a job that may require dealing with complex spreadsheets or databases?</label>
+            <textarea id="question35"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question36">36. Have you ever worked in a role that required problem-solving skills?</label>
+            <textarea id="question36"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question37">37. Do you have any experience in a role that required conflict resolution?</label>
+            <textarea id="question37"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question38">38. Do you have experience with any programming languages or scripting?</label>
+            <textarea id="question38"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question39">39. Do you have any experience with graphic design or content creation?</label>
+            <textarea id="question39"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question40">40. How would you rate your internet research skills?</label>
+            <textarea id="question40"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question41">41. Do you have any experience with social media management?</label>
+            <textarea id="question41"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question42">42. Are you comfortable with a job that requires you to be creative or innovative?</label>
+            <textarea id="question42"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question43">43. Do you have any experience with search engine optimization (SEO)?</label>
+            <textarea id="question43"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question44">44. Are you comfortable working in roles that may require learning about new industries or topics quickly?</label>
+            <textarea id="question44"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question45">45. Do you have any experience with web design or HTML/CSS?</label>
+            <textarea id="question45"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question46">46. Do you have any experience with project management or agile methodologies?</label>
+            <textarea id="question46"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question47">47. Are you comfortable with a job that may involve writing, editing, or proofreading tasks?</label>
+            <textarea id="question47"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question48">48. How comfortable are you working in a rapidly changing or agile environment?</label>
+            <textarea id="question48"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question49">49. Do you have any experience with business development or growth strategies?</label>
+            <textarea id="question49"></textarea>
+        </div>
+        <div class="form-control">
+            <label for="question50">50. Are you comfortable working in a role that requires self-management and initiative?</label>
+            <textarea id="question50"></textarea>
+        </div>
+
+        <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+        document.getElementById('jobProfileForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // to prevent the form from submitting normally
+            var answers = [];
+            for(var i = 1; i <= 50; i++) {
+                var answer = document.getElementById('question' + i).value;
+                answers.push(answer);
+            }
+            console.log(answers); // right now it will just print all the answers in the console
+            // You should replace the above line with a function call to send data to your server/database
+        });
+    </script>
+    <script>
+        window.onload = function() {
+            // Restore saved answers from localStorage when page loads.
+            for(var i = 1; i <= 50; i++) {
+                var savedAnswer = localStorage.getItem('question' + i);
+                if(savedAnswer) {
+                    document.getElementById('question' + i).value = savedAnswer;
+                }
+            }
+    
+            document.getElementById('jobProfileForm').addEventListener('submit', function(event) {
+                event.preventDefault(); 
+                var answers = [];
+    
+                // Save answers in localStorage and in answers array.
+                for(var i = 1; i <= 50; i++) {
+                    var answer = document.getElementById('question' + i).value;
+                    answers.push(answer);
+                    localStorage.setItem('question' + i, answer);
+                }
+                console.log(answers); 
+            });
+        }
+        </script>
+</body>
+</html>
